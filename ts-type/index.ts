@@ -1,30 +1,21 @@
-let hasValue: boolean = true;
-let count: number = 10;
-let float: number = 3.14;
-let navigate: number = -0.12;
-let single: string = 'hello';
-let back: string = 'hello';
 
-const person = {
-    name : {
-        first : 'Jack',
-        last: 'Smith',
-    },
-    age : 21
+function sayHello() : void {
+  console.log("hello!");
 }
 
-const fruits: string[] = ['Apple', 'Banana', 'Grape']
+console.log(sayHello());
+let tmp: undefined;
 
-const book : [string, number, boolean] = ['business', 1500, false];
 
+const anotherAdd : (n1 : number, n2 : number) => number :  add;
 
-enum CoffeSize  {
-    SHORT,
-    TALL,
-    GRANDE,
-    VENTI
+const doubleNumbre = (number : number) : number => number *2;
+
+function doubleAndHandle(num : number, cb : (num : number) => number ) : void {
+    const doubleNum = cb(num * 2);
+    console.log(doubleNum);
 }
-const coffee = {
-    hot : true,
-    size: CoffeSize.TALL
-}
+
+doubleAndHandle(21, doubleNum => {
+    return doubleNum
+});
