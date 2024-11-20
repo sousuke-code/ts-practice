@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "test": "jest"
+    },
+    "type": "module",
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.14",
+        "ts-jest": "^29.2.5"
+    }
+}
